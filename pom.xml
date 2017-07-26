@@ -6,9 +6,18 @@
 
     <groupId>testdemo</groupId>
     <artifactId>testdemo</artifactId>
-    <version>1.0</version>
     <name>testdemo</name>
+    <version>1.0</version>
     <packaging>war</packaging>
-
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <webXml>src\main\webapp\WEB-INF\web.xml</webXml>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     
 </project>
